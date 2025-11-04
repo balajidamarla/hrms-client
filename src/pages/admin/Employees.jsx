@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getEmployees, createEmployee } from "../../services/api";
-import bcrypt from "bcryptjs";
+// import bcrypt from "bcryptjs";
 
 export default function Employees() {
   const [employees, setEmployees] = useState([]);
