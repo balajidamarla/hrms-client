@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-popup {
+  animation: popup 0.4s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-bounceIn {
+  animation: bounceIn 0.5s ease-out;
+}
+
+@keyframes tick {
+  from {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-tick path {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: tick 0.5s ease forwards 0.3s;
+}
